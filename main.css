@@ -1,0 +1,78 @@
+/* 	If you choose to create a mixed (vertical/horizontal) layout for your final project,
+	you will need the two "CSS grid" selectors below. In your HTML document, wrap whatever
+	content you want to follow the grid in a <div> with the class "wrapper." Then in the
+	selectors below, specify what settings you want for "grid-template-columns," "gap,"
+	and "max-width." You can also apply other properties to both the "wrapper" and
+	"@media" selectors that are needed for your design.  */
+body {
+	margin: 0px auto;
+	max-width: 1200px;
+	background-color: whitesmoke;
+
+.wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;  /*  <= Edit this setting per your design.  */
+	gap: 20px;  /*  <= Edit this setting per your design.  */
+}
+
+@media (max-width: 700px) {  /*  <= 700px is a good default "breakpoint," but you can adjust as needed.  */
+	.wrapper {
+		grid-template-columns: 1fr;
+	}
+}
+
+/*  Input the rest of your CSS below.  */
+
+.banner {
+	text-align:center;
+	color: black;
+	font-family: raleway, sans-serif;
+}
+
+.news-section {
+	margin-left: auto;
+	margin-right: auto;
+	font-family: serif;
+h1 {
+	font-size: 60px;
+}
+
+.deck{
+	font-size: 20px;
+}
+.byline {
+	color: darkslategrey;
+	font-family: serif;
+	font-size: 16px;
+
+.date-time {
+	font-size: 14px;
+	margin-top: 0px;
+	color: #666666;
+}
+
+.photo {
+	width: 100%;
+}
+.photo-caption {
+	font-style: serif;
+	font-size: 14px;
+	color: #666666;
+	margin-top: 0px;
+	line-height: 18px;
+}
+.story-body {
+	font-family: serif;
+	font-size: 20px;
+	line-height: 32px;
+	max-width: 700px;
+	color: black;
+}
+a:link {
+	color:#2a2a2a;
+	text-decoration: underline;
+}
+a:hover {
+	color:#737373;
+	text-decoration: none;
+}
